@@ -116,7 +116,7 @@ public class RedmineLinkAnnotator extends ChangeLogAnnotator {
 
     static final LinkMarkup[] MARKUPS = new LinkMarkup[] {
     	new LinkMarkup(
-            "(?:#|refs |references |IssueID |fixes |closes )#?NUM",
+            "(?:#|refs |brm |BRM |references |IssueID |fixes |closes )#?NUM",
             "issues/$1"),
         new LinkMarkup(
             "((?:[A-Z][a-z]+){2,})|wiki:ANYWORD",
@@ -124,7 +124,7 @@ public class RedmineLinkAnnotator extends ChangeLogAnnotator {
     };
     static final LinkMarkup[] MARKUPS_OLD = new LinkMarkup[] {
     	new LinkMarkup(
-            "(?:#|refs |references |IssueID |fixes |closes )#?NUM",
+            "(?:#|refs |brm |BRM |references |IssueID |fixes |closes )#?NUM",
             "issues/show/$1"),
         new LinkMarkup(
             "((?:[A-Z][a-z]+){2,})|wiki:ANYWORD",
